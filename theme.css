@@ -2,32 +2,44 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap');
 
+:root {
+  --bg-main: #0B0E14;
+  --bg-card: #121726;
+  --text-main: #E6E8EE;
+  --text-muted: #9AA3B2;
+  --accent: #4DA3FF;
+  --accent-gradient: linear-gradient(90deg, #4DA3FF 0%, #7C6CFF 100%);
+}
+
 section {
   font-family: 'Onest', Arial, sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.45;
   padding: 56px 64px;
-  color: #EDEDED;
-  background: #0F1115;
+  color: var(--text-main);
+  background: var(--bg-main);
 }
 
 /* Заголовки */
 h1 {
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 h2 {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 18px;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 /* Списки */
@@ -39,19 +51,19 @@ ul {
 li {
   list-style: none;
   position: relative;
-  padding-left: 28px;
+  padding-left: 30px;
   margin-bottom: 10px;
+  color: var(--text-main);
 }
 
-/* Иконки для bullets */
+/* Иконки-буллеты */
 li::before {
-  content: "●";
+  content: "✓";
   position: absolute;
   left: 0;
   top: 0;
-  color: #4DA3FF;
-  font-size: 14px;
-  line-height: 1.6;
+  color: var(--accent);
+  font-weight: 700;
 }
 
 /* Акценты */
@@ -60,23 +72,13 @@ strong {
   color: #FFFFFF;
 }
 
-/* Разделение блоков */
-hr {
-  border: none;
-  border-top: 1px solid rgba(255,255,255,0.08);
-  margin: 32px 0;
-}
-
-/* Код (если вдруг появится) */
-code {
-  font-size: 18px;
-  background: rgba(255,255,255,0.06);
-  padding: 4px 6px;
-  border-radius: 4px;
+/* Подзаголовки и вторичный текст */
+p {
+  color: var(--text-muted);
 }
 
 /* Нумерация слайдов */
 footer {
-  font-size: 14px;
-  color: rgba(255,255,255,0.4);
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
 }
