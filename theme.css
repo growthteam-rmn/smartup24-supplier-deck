@@ -1,20 +1,82 @@
-
----
-
-## 3) Onest — меняем шрифт
-В `theme.css` вставь:
-
-```css
 /* @theme smartup */
 
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap');
 
 section {
   font-family: 'Onest', Arial, sans-serif;
-  font-size: 28px;
-  padding: 60px;
+  font-size: 24px;
+  line-height: 1.45;
+  padding: 56px 64px;
+  color: #EDEDED;
+  background: #0F1115;
 }
 
-h1 { font-size: 56px; }
-h2 { font-size: 40px; }
-ul { margin-top: 18px; }
+/* Заголовки */
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Списки */
+ul {
+  margin-top: 12px;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+}
+
+/* Иконки для bullets */
+li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4DA3FF;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Акценты */
+strong {
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+/* Разделение блоков */
+hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin: 32px 0;
+}
+
+/* Код (если вдруг появится) */
+code {
+  font-size: 18px;
+  background: rgba(255,255,255,0.06);
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+/* Нумерация слайдов */
+footer {
+  font-size: 14px;
+  color: rgba(255,255,255,0.4);
+}
