@@ -2,83 +2,133 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap');
 
-:root {
-  --bg-main: #0B0E14;
-  --bg-card: #121726;
-  --text-main: #E6E8EE;
-  --text-muted: #9AA3B2;
-  --accent: #4DA3FF;
-  --accent-gradient: linear-gradient(90deg, #4DA3FF 0%, #7C6CFF 100%);
+:root{
+  --bg: #0B0E14;
+  --card: rgba(255,255,255,0.06);
+  --stroke: rgba(255,255,255,0.10);
+  --text: #EAF0FF;
+  --muted: rgba(234,240,255,0.70);
+  --accent1: #17E3A6;
+  --accent2: #3AA0FF;
+  --accent3: #7C6CFF;
+  --grad: linear-gradient(90deg, #17E3A6 0%, #3AA0FF 45%, #7C6CFF 100%);
 }
 
-section {
+/* базовая типографика (чуть меньше) */
+section{
   font-family: 'Onest', Arial, sans-serif;
-  font-size: 22px;
-  line-height: 1.45;
-  padding: 56px 64px;
-  color: var(--text-main);
-  background: var(--bg-main);
+  font-size: 21px;
+  line-height: 1.42;
+  padding: 54px 62px;
+  color: var(--text);
+  background: var(--bg);
 }
 
-/* Заголовки */
-h1 {
+/* заголовки */
+h1{
   font-size: 44px;
   font-weight: 700;
-  margin-bottom: 14px;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.02em;
 }
-
-h2 {
+h2{
   font-size: 30px;
   font-weight: 600;
-  margin-bottom: 18px;
-  background: var(--accent-gradient);
+  margin: 0 0 16px 0;
+  letter-spacing: -0.01em;
+  background: var(--grad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-h3 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 10px;
+/* подзаголовок на обложке */
+.subtitle{
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 18px;
 }
 
-/* Списки */
-ul {
-  margin-top: 12px;
-  padding-left: 0;
-}
-
-li {
+/* списки */
+ul{ margin-top: 12px; padding-left: 0; }
+li{
   list-style: none;
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
-  color: var(--text-main);
 }
-
-/* Иконки-буллеты */
-li::before {
+li::before{
   content: "✓";
   position: absolute;
   left: 0;
   top: 0;
-  color: var(--accent);
+  color: var(--accent2);
   font-weight: 700;
 }
 
-/* Акценты */
-strong {
+/* “карточные” акценты (если понадобится) */
+.card{
+  background: var(--card);
+  border: 1px solid var(--stroke);
+  border-radius: 16px;
+  padding: 16px 18px;
+}
+
+/* иконки как на сайте: цветная плашка + лёгкая тень */
+.icon{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  margin-right: 10px;
+  transform: translateY(6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.10);
+  font-size: 18px;
+  color: #0B0E14;
+}
+
+/* палитра плашек (в стиле сайта) */
+.i-blue   { background: linear-gradient(180deg, #3AA0FF 0%, #2C7BFF 100%); }
+.i-cyan   { background: linear-gradient(180deg, #38D3FF 0%, #3AA0FF 100%); }
+.i-teal   { background: linear-gradient(180deg, #17E3A6 0%, #0ED09B 100%); }
+.i-green  { background: linear-gradient(180deg, #4CE58B 0%, #17E3A6 100%); }
+.i-violet { background: linear-gradient(180deg, #9A7CFF 0%, #7C6CFF 100%); }
+.i-indigo { background: linear-gradient(180deg, #6C86FF 0%, #3AA0FF 100%); }
+.i-mint   { background: linear-gradient(180deg, #63F0C7 0%, #17E3A6 100%); }
+.i-orange { background: linear-gradient(180deg, #FFB04D 0%, #FF7A3A 100%); }
+.i-lime   { background: linear-gradient(180deg, #B8FF5A 0%, #4CE58B 100%); }
+
+/* верхняя бренд-панель на обложке */
+.topbar{
+  display:flex;
+  justify-content:flex-start;
+  margin-bottom: 22px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--stroke);
+  border-radius: 999px;
+  padding: 8px 14px 8px 10px;
+}
+.brandname{
   font-weight: 600;
-  color: #FFFFFF;
+  letter-spacing: 0.01em;
+}
+.brandmark{
+  width: 34px;
+  height: 34px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
-/* Подзаголовки и вторичный текст */
-p {
-  color: var(--text-muted);
-}
-
-/* Нумерация слайдов */
-footer {
-  font-size: 13px;
-  color: rgba(255,255,255,0.35);
+/* футер (нумерация) */
+footer{
+  font-size: 12px;
+  color: rgba(234,240,255,0.40);
 }
