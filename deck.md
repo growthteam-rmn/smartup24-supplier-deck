@@ -52,7 +52,7 @@ paginate: true
 
 ---
 
-## <span class="icon i-blue icon-clock"></span> Smartup24 — единая инфраструктура B2B-продаж
+## <span class="icon i-blue icon-rocket"></span> Smartup24 — единая инфраструктура B2B-продаж
 
 <div class="grid two">
   <div class="card">
@@ -74,7 +74,7 @@ paginate: true
 
 ---
 
-## <span class="icon i-violet icon-brain"></span> Ключевые вызовы поставщиков сегодня
+## <span class="icon i-violet icon-rocket"></span> Ключевые вызовы поставщиков сегодня
 
 <div class="grid two">
   <div class="card">
@@ -116,7 +116,7 @@ paginate: true
 
 ---
 
-## <span class="icon i-teal icon-shield"></span> Smartup24 устраняет барьеры роста
+## <span class="icon i-teal icon-rocket"></span> Smartup24 устраняет барьеры роста
 
 <div class="grid two">
   <div class="card">
@@ -139,7 +139,7 @@ paginate: true
 
 ---
 
-## <span class="icon i-cyan icon-link"></span> Как работает Smartup24
+## <span class="icon i-cyan icon-rocket"></span> Как работает Smartup24
 
 <div class="grid three">
   <div class="card">
@@ -181,7 +181,7 @@ paginate: true
 
 ---
 
-## <span class="icon i-green icon-bolt"></span> Прямые заказы 24/7 — больше продаж
+## <span class="icon i-green icon-rocket"></span> Прямые заказы 24/7 — больше продаж
 
 <div class="grid two">
   <div class="card">
@@ -202,7 +202,7 @@ paginate: true
 
 ---
 
-## <span class="icon i-indigo icon-chart"></span> Полный контроль: остатки и продажи
+## <span class="icon i-indigo icon-rocket"></span> Полный контроль: остатки и продажи
 
 <div class="grid two">
   <div class="card">
@@ -225,7 +225,7 @@ paginate: true
 
 ---
 
-## <span class="icon i-mint icon-box"></span> Единый каталог и оптимальный заказ
+## <span class="icon i-mint icon-rocket"></span> Единый каталог и оптимальный заказ
 
 <div class="grid two">
   <div class="card">
@@ -251,7 +251,7 @@ paginate: true
 
 ---
 
-## <span class="icon i-orange icon-megaphone"></span> Промо, интеграции и автоматизация
+## <span class="icon i-orange icon-rocket"></span> Промо, интеграции и автоматизация
 
 <div class="grid two">
   <div class="card">
@@ -277,7 +277,7 @@ paginate: true
 
 ---
 
-## <span class="icon i-lime icon-check"></span> Бизнес-эффект для поставщика
+## <span class="icon i-lime icon-rocket"></span> Бизнес-эффект для поставщика
 
 <div class="grid two">
   <div class="card">
@@ -312,8 +312,6 @@ paginate: true
 
 ---
 
----
-
 ## <span class="icon i-blue icon-rocket"></span> Как начать работу с Smartup24
 
 <div class="grid two">
@@ -330,7 +328,7 @@ paginate: true
         <td class="n">2</td>
         <td class="t">
           <div class="ttl">Запуск</div>
-          <div class="txt">Интеграция ERP/POS или быстрый старт.</div>
+          <div class="txt">Интеграция ERP / POS или быстрый старт.</div>
         </td>
       </tr>
       <tr>
@@ -358,4 +356,3 @@ paginate: true
     <div class="note">Экран подключения каталога / схема интеграции.</div>
   </div>
 </div>
-
