@@ -1,0 +1,17 @@
+
+---
+
+## 2) Тема (минимальный фирменный вид): `theme.css`
+```css
+/* @theme smartup */
+
+section {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 28px;
+  padding: 60px;
+}
+
+h1 { font-size: 56px; }
+h2 { font-size: 40px; }
+ul { margin-top: 18px; }
+code { font-size: 22px; }
