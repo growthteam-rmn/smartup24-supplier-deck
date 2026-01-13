@@ -305,3 +305,29 @@ footer{
   margin: 0;
   padding: 0;
 }
+/* steps table (fix for Marp html rendering) */
+table.steps{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2px;
+}
+table.steps td{
+  padding: 8px 0;
+  vertical-align: top;
+}
+table.steps td.n{
+  width: 34px;
+  padding-right: 12px;
+  font-weight: 700;
+  color: rgba(11,18,32,0.80);
+}
+table.steps .ttl{
+  font-weight: 650;
+  color: rgba(11,18,32,0.92);
+  margin-bottom: 2px;
+}
+table.steps .txt{
+  font-size: 14px;
+  color: rgba(11,18,32,0.72);
+  line-height: 1.35;
+}
