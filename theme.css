@@ -14,17 +14,15 @@
   --grad: linear-gradient(90deg, #17E3A6 0%, #3AA0FF 45%, #7C6CFF 100%);
 }
 
-/* базовая типографика (чуть меньше) */
 section{
   font-family: 'Onest', Arial, sans-serif;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 1.42;
-  padding: 54px 62px;
+  padding: 52px 60px;
   color: var(--text);
   background: var(--bg);
 }
 
-/* заголовки */
 h1{
   font-size: 44px;
   font-weight: 700;
@@ -41,20 +39,95 @@ h2{
   -webkit-text-fill-color: transparent;
 }
 
-/* подзаголовок на обложке */
 .subtitle{
   margin-top: 14px;
   color: var(--muted);
   font-size: 18px;
 }
 
-/* списки */
-ul{ margin-top: 12px; padding-left: 0; }
+/* --- Cards / Grid --- */
+.grid{
+  display: grid;
+  gap: 16px;
+  margin-top: 14px;
+}
+.grid.two{ grid-template-columns: 1fr 1fr; }
+.grid.three{ grid-template-columns: 1fr 1fr 1fr; }
+
+.card{
+  background: var(--card);
+  border: 1px solid var(--stroke);
+  border-radius: 18px;
+  padding: 16px 18px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.22);
+}
+
+.kicker{
+  font-size: 13px;
+  color: rgba(234,240,255,0.55);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.lead{
+  font-size: 22px;
+  line-height: 1.35;
+  color: rgba(234,240,255,0.92);
+  margin-bottom: 12px;
+}
+
+.note{
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgba(234,240,255,0.55);
+}
+
+/* Steps */
+.step{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.step span{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width: 26px;
+  height: 26px;
+  border-radius: 10px;
+  background: rgba(58,160,255,0.18);
+  border: 1px solid rgba(58,160,255,0.30);
+  color: rgba(234,240,255,0.92);
+  font-size: 14px;
+}
+.text{
+  color: rgba(234,240,255,0.80);
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.cta{
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(23,227,166,0.30);
+  background: linear-gradient(90deg, rgba(23,227,166,0.14), rgba(58,160,255,0.12));
+  color: rgba(234,240,255,0.92);
+  font-weight: 600;
+}
+
+/* --- Lists with check icons --- */
+ul{ margin: 10px 0 0 0; padding-left: 0; }
 li{
   list-style: none;
   position: relative;
-  padding-left: 30px;
-  margin-bottom: 10px;
+  padding-left: 28px;
+  margin-bottom: 9px;
+  color: rgba(234,240,255,0.88);
 }
 li::before{
   content: "✓";
@@ -62,18 +135,10 @@ li::before{
   left: 0;
   top: 0;
   color: var(--accent2);
-  font-weight: 700;
+  font-weight: 800;
 }
 
-/* “карточные” акценты (если понадобится) */
-.card{
-  background: var(--card);
-  border: 1px solid var(--stroke);
-  border-radius: 16px;
-  padding: 16px 18px;
-}
-
-/* иконки как на сайте: цветная плашка + лёгкая тень */
+/* --- Icon tiles (like site) --- */
 .icon{
   display: inline-flex;
   align-items: center;
@@ -88,8 +153,6 @@ li::before{
   font-size: 18px;
   color: #0B0E14;
 }
-
-/* палитра плашек (в стиле сайта) */
 .i-blue   { background: linear-gradient(180deg, #3AA0FF 0%, #2C7BFF 100%); }
 .i-cyan   { background: linear-gradient(180deg, #38D3FF 0%, #3AA0FF 100%); }
 .i-teal   { background: linear-gradient(180deg, #17E3A6 0%, #0ED09B 100%); }
@@ -100,35 +163,43 @@ li::before{
 .i-orange { background: linear-gradient(180deg, #FFB04D 0%, #FF7A3A 100%); }
 .i-lime   { background: linear-gradient(180deg, #B8FF5A 0%, #4CE58B 100%); }
 
-/* верхняя бренд-панель на обложке */
-.topbar{
-  display:flex;
-  justify-content:flex-start;
-  margin-bottom: 22px;
+/* --- Image placeholders --- */
+.img{
+  width: 100%;
+  border-radius: 16px;
+  border: 1px dashed rgba(234,240,255,0.20);
+  background:
+    linear-gradient(135deg, rgba(23,227,166,0.12), rgba(58,160,255,0.10), rgba(124,108,255,0.10));
+  position: relative;
+  overflow: hidden;
 }
+.img::after{
+  content: "Место под изображение";
+  position: absolute;
+  left: 14px;
+  bottom: 12px;
+  font-size: 12px;
+  color: rgba(234,240,255,0.50);
+}
+.img.hero{ height: 220px; margin-top: 18px; }
+.img.shot{ height: 220px; margin-top: 12px; }
+.img.wide{ height: 180px; margin-top: 16px; }
+.img.mini{ height: 120px; margin-top: 12px; }
+
+/* topbar / logo pill */
+.topbar{ display:flex; justify-content:flex-start; margin-bottom: 22px; }
 .brand{
-  display:flex;
-  align-items:center;
-  gap: 10px;
+  display:flex; align-items:center; gap: 10px;
   background: rgba(255,255,255,0.05);
   border: 1px solid var(--stroke);
   border-radius: 999px;
   padding: 8px 14px 8px 10px;
 }
-.brandname{
-  font-weight: 600;
-  letter-spacing: 0.01em;
-}
-.brandmark{
-  width: 34px;
-  height: 34px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
+.brandname{ font-weight: 600; letter-spacing: 0.01em; }
+.brandmark{ width: 34px; height: 34px; display:flex; align-items:center; justify-content:center; }
 
-/* футер (нумерация) */
+/* footer (slide numbers) */
 footer{
   font-size: 12px;
-  color: rgba(234,240,255,0.40);
+  color: rgba(234,240,255,0.38);
 }
