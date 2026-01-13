@@ -312,21 +312,42 @@ paginate: true
 
 ---
 
+---
+
 ## <span class="icon i-blue icon-rocket"></span> Как начать работу с Smartup24
 
 <div class="grid two">
   <div class="card">
-    <div class="step"><span>1</span> Подключение</div>
-    <div class="text">Каталог и условия поставщика.</div>
-
-    <div class="step"><span>2</span> Запуск</div>
-    <div class="text">Интеграция ERP/POS или быстрый старт.</div>
-
-    <div class="step"><span>3</span> Пилот</div>
-    <div class="text">Тестовый запуск на выбранных торговых точках.</div>
-
-    <div class="step"><span>4</span> Масштаб</div>
-    <div class="text">Расширение на регион или сеть.</div>
+    <table class="steps">
+      <tr>
+        <td class="n">1</td>
+        <td class="t">
+          <div class="ttl">Подключение</div>
+          <div class="txt">Каталог и условия поставщика.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="n">2</td>
+        <td class="t">
+          <div class="ttl">Запуск</div>
+          <div class="txt">Интеграция ERP/POS или быстрый старт.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="n">3</td>
+        <td class="t">
+          <div class="ttl">Пилот</div>
+          <div class="txt">Тестовый запуск на выбранных торговых точках.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="n">4</td>
+        <td class="t">
+          <div class="ttl">Масштаб</div>
+          <div class="txt">Расширение на регион или сеть.</div>
+        </td>
+      </tr>
+    </table>
 
     <div class="cta">Средний срок запуска — от нескольких дней</div>
   </div>
@@ -337,3 +358,4 @@ paginate: true
     <div class="note">Экран подключения каталога / схема интеграции.</div>
   </div>
 </div>
+
